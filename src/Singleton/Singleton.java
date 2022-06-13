@@ -18,7 +18,6 @@ public class Singleton {
             System.out.println("Only one time");
             Singleton.Instance = new Singleton();
         }
-
         return Instance;
     }
 }
