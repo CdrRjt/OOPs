@@ -2,11 +2,11 @@ package Inheritance;
 
 public class Box {
 
-    int l;
-    int b;
+    int l;   // if these members are private then they cannot be accessed in another class , we cannot use it
+    int b;   // in the subclass(child). Although it is has access to all members but not private ones
     int w;
 
-  public Box(){
+  Box(){
 
         this.l = -1;
         this.b =  -1;
@@ -21,7 +21,8 @@ public class Box {
 
     }
 
-    Box(Box old){   // it is a copy constructor here, we are passing an old constructor, and assigning all the values
+    Box(Box old){
+                         // it is a copy constructor here, we are passing an old constructor, and assigning all the values
         this.l = old.l;  // to the new one
         this.w = old.w;
         this.b = old.b;
